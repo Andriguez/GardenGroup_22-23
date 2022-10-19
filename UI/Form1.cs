@@ -20,6 +20,8 @@ namespace UI
         public Form1()
         {
             InitializeComponent();
+            TicketView view = new TicketView();
+            view.Show();
             Start();
         }
 
@@ -28,7 +30,6 @@ namespace UI
             Databases dbs = new Databases();
             foreach (var db in dbs.Get_All_Databases())
                 listBox1.Items.Add(db.name);
-            //sup Andy
         }
     }
 }
