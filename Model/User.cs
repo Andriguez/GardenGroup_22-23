@@ -8,13 +8,13 @@ namespace Model
 {
     public class User
     {
-        int Id { get; set; }
-        string Name { get; set; }
-        string Password { get; set; }
-        string Email { get; set; }
-        int Phone { get; set; }
-        string UserType { get; set; }
-        string Location { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Password { get; set; }
+        public string Email { get; set; }
+        public int Phone { get; set; }
+        public UserType UserType { get; set; }
+        public Location Location { get; set; }
 
     }
 }

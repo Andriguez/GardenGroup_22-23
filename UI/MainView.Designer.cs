@@ -33,12 +33,17 @@
             this.ticketManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UserManagement_pnl = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.AddUser_bttn = new System.Windows.Forms.Button();
+            this.User_lstView = new System.Windows.Forms.ListView();
+            this.IdHeader = new System.Windows.Forms.ColumnHeader();
+            this.nameHeader = new System.Windows.Forms.ColumnHeader();
+            this.EmailHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.phoneHeader = new System.Windows.Forms.ColumnHeader();
+            this.locationHeader = new System.Windows.Forms.ColumnHeader();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Dashboard_pnl = new System.Windows.Forms.Panel();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.AddUser_bttn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.UserManagement_pnl.SuspendLayout();
             this.Dashboard_pnl.SuspendLayout();
@@ -81,12 +86,71 @@
             // 
             this.UserManagement_pnl.Controls.Add(this.textBox1);
             this.UserManagement_pnl.Controls.Add(this.AddUser_bttn);
-            this.UserManagement_pnl.Controls.Add(this.listView1);
+            this.UserManagement_pnl.Controls.Add(this.User_lstView);
             this.UserManagement_pnl.Controls.Add(this.label2);
             this.UserManagement_pnl.Location = new System.Drawing.Point(0, 31);
             this.UserManagement_pnl.Name = "UserManagement_pnl";
             this.UserManagement_pnl.Size = new System.Drawing.Size(801, 537);
             this.UserManagement_pnl.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(43, 127);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(125, 27);
+            this.textBox1.TabIndex = 4;
+            // 
+            // AddUser_bttn
+            // 
+            this.AddUser_bttn.Location = new System.Drawing.Point(579, 124);
+            this.AddUser_bttn.Name = "AddUser_bttn";
+            this.AddUser_bttn.Size = new System.Drawing.Size(134, 40);
+            this.AddUser_bttn.TabIndex = 3;
+            this.AddUser_bttn.Text = "Add User";
+            this.AddUser_bttn.UseVisualStyleBackColor = true;
+            this.AddUser_bttn.Click += new System.EventHandler(this.AddUser_bttn_Click);
+            // 
+            // User_lstView
+            // 
+            this.User_lstView.BackgroundImageTiled = true;
+            this.User_lstView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.IdHeader,
+            this.nameHeader,
+            this.EmailHeader1,
+            this.phoneHeader,
+            this.locationHeader});
+            this.User_lstView.HideSelection = false;
+            this.User_lstView.Location = new System.Drawing.Point(47, 192);
+            this.User_lstView.Name = "User_lstView";
+            this.User_lstView.Size = new System.Drawing.Size(708, 305);
+            this.User_lstView.TabIndex = 2;
+            this.User_lstView.UseCompatibleStateImageBehavior = false;
+            this.User_lstView.View = System.Windows.Forms.View.Details;
+            // 
+            // IdHeader
+            // 
+            this.IdHeader.Text = "Id";
+            this.IdHeader.Width = 70;
+            // 
+            // nameHeader
+            // 
+            this.nameHeader.Text = "Name";
+            this.nameHeader.Width = 150;
+            // 
+            // EmailHeader1
+            // 
+            this.EmailHeader1.Text = "Email";
+            this.EmailHeader1.Width = 200;
+            // 
+            // phoneHeader
+            // 
+            this.phoneHeader.Text = "Phone";
+            this.phoneHeader.Width = 130;
+            // 
+            // locationHeader
+            // 
+            this.locationHeader.Text = "Location";
+            this.locationHeader.Width = 150;
             // 
             // label2
             // 
@@ -113,32 +177,6 @@
             this.Dashboard_pnl.Name = "Dashboard_pnl";
             this.Dashboard_pnl.Size = new System.Drawing.Size(380, 231);
             this.Dashboard_pnl.TabIndex = 2;
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(47, 192);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(708, 305);
-            this.listView1.TabIndex = 2;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // AddUser_bttn
-            // 
-            this.AddUser_bttn.Location = new System.Drawing.Point(579, 124);
-            this.AddUser_bttn.Name = "AddUser_bttn";
-            this.AddUser_bttn.Size = new System.Drawing.Size(134, 40);
-            this.AddUser_bttn.TabIndex = 3;
-            this.AddUser_bttn.Text = "Add User";
-            this.AddUser_bttn.UseVisualStyleBackColor = true;
-            this.AddUser_bttn.Click += new System.EventHandler(this.AddUser_bttn_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(43, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 4;
             // 
             // MainView
             // 
@@ -175,6 +213,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button AddUser_bttn;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView User_lstView;
+        private System.Windows.Forms.ColumnHeader IdHeader;
+        private System.Windows.Forms.ColumnHeader nameHeader;
+        private System.Windows.Forms.ColumnHeader EmailHeader1;
+        private System.Windows.Forms.ColumnHeader phoneHeader;
+        private System.Windows.Forms.ColumnHeader locationHeader;
     }
 }

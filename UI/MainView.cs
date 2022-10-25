@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
+using MongoDB.Driver;
+using Model;
+using Logic;
 
 
 namespace UI
@@ -38,6 +42,10 @@ namespace UI
 
                 UserManagement_pnl.Dock = DockStyle.Fill;
                 UserManagement_pnl.Show();
+
+                Databases dbs = new Databases();
+                foreach (var db in dbs.Get_All_Databases())
+                    User_lstView.Items.Add(db.name);
             }
         }
 

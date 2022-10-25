@@ -7,6 +7,7 @@ using MongoDB.Driver;
 using Model;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
+using MongoDB.Driver.Core.Configuration;
 
 namespace DAL
 {
@@ -32,5 +33,9 @@ namespace DAL
             return dbs;
         }
 
+        public List<BSonDocument> GetListOfDocumets()
+        {
+
+        }
     }
 }
