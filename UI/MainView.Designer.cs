@@ -33,6 +33,7 @@
             this.ticketManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UserManagement_pnl = new System.Windows.Forms.Panel();
+            this.SearchByEmail_bttn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.AddUser_bttn = new System.Windows.Forms.Button();
             this.User_lstView = new System.Windows.Forms.ListView();
@@ -44,7 +45,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Dashboard_pnl = new System.Windows.Forms.Panel();
-            this.SearchByEmail_bttn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.UserManagement_pnl.SuspendLayout();
             this.Dashboard_pnl.SuspendLayout();
@@ -95,6 +95,15 @@
             this.UserManagement_pnl.Size = new System.Drawing.Size(801, 537);
             this.UserManagement_pnl.TabIndex = 1;
             // 
+            // SearchByEmail_bttn
+            // 
+            this.SearchByEmail_bttn.Location = new System.Drawing.Point(298, 127);
+            this.SearchByEmail_bttn.Name = "SearchByEmail_bttn";
+            this.SearchByEmail_bttn.Size = new System.Drawing.Size(94, 29);
+            this.SearchByEmail_bttn.TabIndex = 5;
+            this.SearchByEmail_bttn.Text = "Search";
+            this.SearchByEmail_bttn.UseVisualStyleBackColor = true;
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(43, 127);
@@ -123,6 +132,7 @@
             this.locationHeader});
             this.User_lstView.HideSelection = false;
             this.User_lstView.Location = new System.Drawing.Point(47, 192);
+            this.User_lstView.MultiSelect = false;
             this.User_lstView.Name = "User_lstView";
             this.User_lstView.Size = new System.Drawing.Size(708, 305);
             this.User_lstView.TabIndex = 2;
@@ -132,12 +142,11 @@
             // IdHeader
             // 
             this.IdHeader.Text = "Id";
-            this.IdHeader.Width = 70;
             // 
             // nameHeader
             // 
             this.nameHeader.Text = "Name";
-            this.nameHeader.Width = 150;
+            this.nameHeader.Width = 140;
             // 
             // EmailHeader1
             // 
@@ -179,15 +188,6 @@
             this.Dashboard_pnl.Name = "Dashboard_pnl";
             this.Dashboard_pnl.Size = new System.Drawing.Size(380, 231);
             this.Dashboard_pnl.TabIndex = 2;
-            // 
-            // SearchByEmail_bttn
-            // 
-            this.SearchByEmail_bttn.Location = new System.Drawing.Point(298, 127);
-            this.SearchByEmail_bttn.Name = "SearchByEmail_bttn";
-            this.SearchByEmail_bttn.Size = new System.Drawing.Size(94, 29);
-            this.SearchByEmail_bttn.TabIndex = 5;
-            this.SearchByEmail_bttn.Text = "Search";
-            this.SearchByEmail_bttn.UseVisualStyleBackColor = true;
             // 
             // MainView
             // 

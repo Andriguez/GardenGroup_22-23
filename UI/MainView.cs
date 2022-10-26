@@ -47,9 +47,16 @@ namespace UI
                 //    User_lstView.Items.Add(db.name);
 
                 UserService userService = new UserService ();
-                foreach (var doc in userService.GetFilteredUsers())
+                foreach (var doc in userService.GetAllUsers())
                 {
-                    User_lstView.Items.Add(doc.Name);
+                    
+                    ListViewItem li = new ListViewItem(doc.Id.ToString());
+                    li.SubItems.Add(doc.Name);
+                    li.SubItems.Add(doc.Email);
+                    li.SubItems.Add(doc.Phone.ToString());
+                    li.SubItems.Add(doc.Location.ToString());
+                    li.Tag = doc;
+                    User_lstView.Items.Add(li);
                 }
             }
         }
