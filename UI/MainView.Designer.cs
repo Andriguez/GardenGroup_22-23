@@ -44,6 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Dashboard_pnl = new System.Windows.Forms.Panel();
+            this.SearchByEmail_bttn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.UserManagement_pnl.SuspendLayout();
             this.Dashboard_pnl.SuspendLayout();
@@ -84,6 +85,7 @@
             // 
             // UserManagement_pnl
             // 
+            this.UserManagement_pnl.Controls.Add(this.SearchByEmail_bttn);
             this.UserManagement_pnl.Controls.Add(this.textBox1);
             this.UserManagement_pnl.Controls.Add(this.AddUser_bttn);
             this.UserManagement_pnl.Controls.Add(this.User_lstView);
@@ -97,7 +99,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(43, 127);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
+            this.textBox1.Size = new System.Drawing.Size(226, 27);
             this.textBox1.TabIndex = 4;
             // 
             // AddUser_bttn
@@ -178,6 +180,15 @@
             this.Dashboard_pnl.Size = new System.Drawing.Size(380, 231);
             this.Dashboard_pnl.TabIndex = 2;
             // 
+            // SearchByEmail_bttn
+            // 
+            this.SearchByEmail_bttn.Location = new System.Drawing.Point(298, 127);
+            this.SearchByEmail_bttn.Name = "SearchByEmail_bttn";
+            this.SearchByEmail_bttn.Size = new System.Drawing.Size(94, 29);
+            this.SearchByEmail_bttn.TabIndex = 5;
+            this.SearchByEmail_bttn.Text = "Search";
+            this.SearchByEmail_bttn.UseVisualStyleBackColor = true;
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -219,5 +230,6 @@
         private System.Windows.Forms.ColumnHeader EmailHeader1;
         private System.Windows.Forms.ColumnHeader phoneHeader;
         private System.Windows.Forms.ColumnHeader locationHeader;
+        private System.Windows.Forms.Button SearchByEmail_bttn;
     }
 }
